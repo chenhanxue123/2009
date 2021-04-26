@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var obj = {}
+
+        Object.defineProperty(obj, "sex", {
+            value: "Male",  //属性的值
+            configurable: true, //属性是否可以被delete删除
+            writable: true,  //属性是否可被修改
+            enumerable: true, //属性是的可权举 for in
+        })
+
+        Object.defineProperty(obj, "age", {
+            value: 11,
+            enumerable: true,
+            configurable:false,
+            writable:true
+        })
+        obj.email = "mechen@qq.com"
+        console.log(obj)
+
+        // delect
+        // delect obj.age
+
+        console.log("delect age 之后:",obj)
+
+        //权举
+
+        for(k in obj){
+            console.log(k)
+        }
+
+    </script>
+</body>
+
+</html>

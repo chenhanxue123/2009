@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建对象的方式
+        // 从构制造new
+        function person(name,age){
+            this.name = name
+            this.age = age
+        }
+
+        var p1 = new person("mechen",11)
+        var p2 = new person("lisi",22)
+
+        // 对象字面量
+
+        var obj1 = {}
+        var obj2 = {
+            color:"red"
+            // width:"100px"
+        }
+
+        obj2.hello = function(){
+            alert("Hello world")
+        }
+
+        console.log(obj2)
+        console.log(obj2.color)
+        obj2.hello()
+
+    </script>
+</body>
+</html>
