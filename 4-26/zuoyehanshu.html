@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+        <p id="p1">AAAAAA</p>
+        <p class="pp">BBBBBB</p>
+        <p class="pp">CCCCC</p>
+        <span>Hello</span>
+</body>
+
+
+</html>
+<script>
+    window.onload = function () {
+        console.log($("#p1"));
+        console.log($(".pp"));
+        console.log($("span"));
+        function $(canshu){
+            var aaa = canshu.substr(0,1);
+            if(aaa=="#"){
+                var aaa = document.querySelector(canshu);
+            }else{
+                var aaa = document.querySelectorAll(canshu);
+            }
+            return aaa;
+        }
+    }
+</script>
