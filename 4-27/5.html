@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Javascript数据类型有哪些？ -->
+    6种数据类型
+    5种基本数据类型： undefined、null、string、number、boolean
+    1种复杂数据类型：object
+
+    <!-- 引用数据类型包括哪些？ -->
+    Object
+    Array
+    Function
+    如何检测引用数据类型： instanceof
+
+    <!-- 数组常用的方法有哪些？ -->
+    var arr = [11,22,33,44,55,66,77] //定义一个数组
+    var length = arr.length //获取数组的长度
+    arr.push(88) //向数组尾部添加元素
+    arr.pop() //从尾部移除一个元素
+    arr.unshift(88) //从数组头部添加元素
+    arr.shift() //从数组头部移除一个元素
+    arr.slice(x,y) //返回从下标x开始截取到下标y（不包含下标y）
+    arr.splice(x,y) //删除从下标x开始的 y个元素
+
+    <!-- 创建对象的方法有哪些？ -->
+    构造函数创建
+    对象字面量创建
+
+    <!-- 什么是原型？什么是原型链？ -->
+    JavaScript 规定，所有对象都有自己的原型对象（prototype）。
+    一方面，任何一个对象，都可以充当其他对象的原型；另一方面，由于原型对象也是对象，
+    所以它也有自己的原型。因此，就会形成一个“原型链”（prototype chain）：对象到原型，
+    再到原型的原型
+    <!-- 对象属性的4个描述是什么？ -->
+    ■ 属性的值： value
+    ■ 属性是否可删除：configureable
+    ■ 属性是否可枚举：enumerable
+    ■ 属性是否可写： writable
+
+    <!-- 对象常用的方法有哪些？ -->
+    Object.assign()
+    Object.defineProperty()
+    Object.entries()
+    Object.getPrototypeOf()
+    Object.keys()
+    Object.values()
+    <!-- 如何创建一个函数？ -->
+    Function
+    <!-- 通过构造函数创建 -->
+    var fun1 = new Function('a','b',"return a+b")
+    console.log(fun1)
+    console.log(fun1(11,22))
+
+    <!-- 通过函数声明创建 -->
+    function add(num1,num2){
+    return num1 + num2
+    }
+    console.log(add(11,22))
+
+    <!-- 通过函数表达式创建（将匿名函数赋值给变量） -->
+
+    var add = function(num1,num2){
+    return num1 + num2
+    }
+    console.log(add(11,22))
+
+    <!-- GIT常用命令 -->
+
+    初始化仓库 git init
+    查看仓库状态 git status
+    查看修改的内容 git diff 文件名
+    向仓库中添加文件 git add 文件名
+    提交 git commit -m "提交注释"
+    撤销文件修改 git checkout 文件名
+    查看提交记录 git log (--pretty=oneline)
+    推送代码 git push
+
+    <!-- DOM查找节点的方法有哪些？ -->
+    //根据id获取节点
+    document.getElementById("id");
+    //根据标签名获取节点
+    document.getElementsByTagName("tagname");
+    //根据class名 获取节点
+    document.getElementsByClass("classname");
+    // 返回第一个匹配的 class名的节点
+    document.querySelector(".pp")
+    //返回所有匹配的 class名的节点
+    document.querySelectorAll(".pp")
+
+
+     <!-- 命名变量的方式有哪几种？各有哪些特点？ -->
+     var let const
+
+     <!-- 字符串常用的属性和方法有哪些？ -->
+     indexOf()、repeat()、substr()、length()、replace()、split()
+    
+</body>
+
+</html>
